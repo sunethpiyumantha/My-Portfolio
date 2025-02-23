@@ -18,9 +18,10 @@ const Navbar = () => {
         )}
         <div className="flex__center logo" 
         onClick={()=> scroll.scrollToTop({ duration: 500})}>
-        <img src={logo} />
+        <img src={logo} alt="Logo" />
         </div>
-        <aside className='flex__center sidebar'>
+        <aside className={`flex__center sidebar ${showSidebar ? "visible" : ""}`}
+        >
           <div className="flex sidebar__top">
             <span className="icon__container close__btn"
             onClick={()=> setShowSidebar(!showSidebar)}

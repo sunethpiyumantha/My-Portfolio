@@ -1,6 +1,4 @@
-
-
-.navbar{
+.navbar {
     align-items: stretch;
     justify-content: space-between;
     padding: 10px 20px;
@@ -10,41 +8,41 @@
     z-index: 200;
     width: 90%;
     max-width: 1000px;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
     border-radius: 50px;
 }
 
-.navbar .logo{
+.navbar .logo {
     width: 132px;
     height: 38px;
     cursor: pointer;
 }
 
-.navbar .sidebar__middle{
+.navbar .sidebar__middle {
     align-items: center;
     justify-content: space-between;
     gap: 0.8rem;
 }
 
-.navbar .tab{
+.navbar .tab {
     padding: 8px;
     font-size: 18px;
     font-weight: 500;
 }
 
-.navbar .buttons__wrapper{
+.navbar .buttons__wrapper {
     gap: 20px;
 }
 
-.navbar .hire__btn{
+.navbar .hire__btn {
     overflow: hidden;
     position: relative;
     padding-right: 3.3rem;
-    border-radius: 0.7rem;  
+    border-radius: 0.7rem;
     box-shadow: 0 0 1.6rem -0.6rem var(--color-ui-2);
 }
 
-.navbar .hire__btn .icon{
+.navbar .hire__btn .icon {
     background: var(--color-primary);
     color: var(--color-white);
     margin-left: 1rem;
@@ -57,18 +55,18 @@
     transition: var(--transition);
 }
 
-.navbar .hire__btn:hover .icon{
-    width: calc(100% - 00.6rem);
+.navbar .hire__btn:hover .icon {
+    width: calc(100% - 0.6rem);
 }
 
-.navbar.menu,
-.navbar.close__btn{
+.navbar .menu,
+.navbar .close__btn {
     font-size: 25px;
     cursor: pointer;
     display: none;
 }
 
-.aside_overlay{
+.aside__overlay {
     background: rgba(1, 1, 1, 0.5);
     position: fixed;
     top: 0;
@@ -81,11 +79,53 @@
     cursor: pointer;
 }
 
-/*Responsiveness*/
+/* Responsiveness */
 
-@media (max-width:900px){
-    .navbar{
+@media (max-width: 900px) {
+    .navbar {
         top: 50px;
         width: 100%;
+        border-radius: 0px;
+        background: rgba(var(--color-ui-2-rgb), 0.5);
+    }
+
+    .navbar .sidebar {
+        position: fixed;
+        width: 100%;
+        max-width: 320px;
+        height: 100%;
+        min-height: 100vh;
+        background: var(--color-ui-2);
+        top: 0;
+        left: -500px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        z-index: 202;
+        padding-top: 20px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .navbar .sidebar.visible {
+        left: 0;
+    }
+
+    .navbar .sidebar__top {
+        padding: 0 20px;
+        justify-content: flex-end;
+    }
+
+    .navbar .sidebar__middle {
+        padding: 20px;
+        flex: 1;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .navbar .menu,
+    .navbar .close__btn {
+        display: flex;
     }
 }
