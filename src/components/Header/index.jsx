@@ -3,6 +3,7 @@ import "./Header.css";
 import HeaderTitle from "../../ui/HeaderTitle";
 import { profile1 } from "../../assets";
 import CodeBlock from "../../ui/CodeBlock";
+import Facts from '../../ui/Facts';
 
 const code = `
 const developer = {
@@ -32,6 +33,12 @@ const Header = () => {
         </div>
         <div className="card grid lower">
           <CodeBlock language={"javascript"} code={code} />
+          <div>
+            <p className="text__muted description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore repellendus fuga nisi possimus, harum magnam vero aspernatur cumque praesentium voluptate blanditiis non in optio tempora est totam, eveniet consectetur at.
+            </p>
+            <Facts />
+          </div>
         </div>
       </div>
     </header>
