@@ -24,8 +24,7 @@ const HeaderTitle = () => {
       </h1>
       <p>
         Enthusiastic and dedicated undergraduate student from Rajarata University of Sri Lanka, majoring in Computer Science, seeking a web development internship to leverage my skills in HTML, CSS, JavaScript, and modern web development frameworks. Eager to contribute to impactful projects while gaining practical experience in a dynamic environment.
-        Enthusiastic and dedicated undergraduate student from Rajarata University of Sri Lanka, majoring in Computer Science, seeking a web development internship to leverage my skills in HTML, CSS, JavaScript, and modern web development frameworks. Eager to contribute to impactful projects while gaining practical experience in a dynamic environment.
-        Enthusiastic and dedicated undergraduate student from Rajarata University of Sri Lanka, majoring in Computer Science, seeking a web development internship to leverage my skills in HTML, CSS, JavaScript, and modern web development frameworks. Eager to contribute to impactful projects while gaining practical experience in a dynamic environment.</p>
+        </p>
     </div>
   );
 };
