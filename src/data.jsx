@@ -273,7 +273,7 @@ export const skills = [
 export const contactInfo = [
   {
     name: "Email",
-    value: "mradinuba@gmail.com",
+    value: "suneth20p@gmail.com",
     link: "mailto:mradinuba@gmail.com",
     icon: emailicon,
     btnIcon: <MdOutlineEmail />,
@@ -281,7 +281,7 @@ export const contactInfo = [
   },
   {
     name: "Messenger",
-    value: "Emmanuel Eze",
+    value: "suneth Piyumantha",
     link: "http://m.me/profile?id=profile-i",
     icon: messengericon,
     btnIcon: <RiMessengerLine />,
@@ -289,7 +289,7 @@ export const contactInfo = [
   },
   {
     name: "WhatsApp",
-    value: "+2348149121918",
+    value: "+94 767878909",
     link: "https://api.whatsapp.com/send?phone=+2348149121918",
     icon: whatsappicon,
     btnIcon: <BsWhatsapp />,
