@@ -71,14 +71,10 @@ export const services = [
 
 export const projects = [
   {
-    title: "AI Powered School",
+    title: "Travel Website UI Design",
     image: project1,
     category: "UI/UX",
-    description: `Transforming education with AI, our School UI Design project revolutionizes the 
-                     learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
-                     and intuitive navigation, our design empowers educators and students alike. Experience 
-                     innovation at its finest as we pave the way for a smarter, more efficient educational 
-                     journey.`,
+    description: ``,
     demoLink: "https://google.com/",
     stacks: [
       {
